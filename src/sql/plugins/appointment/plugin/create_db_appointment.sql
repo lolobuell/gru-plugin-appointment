@@ -97,6 +97,7 @@ CREATE TABLE appointment_appointment (
 	id_action_cancel int NOT NULL,
 	id_admin_user int DEFAULT NULL,
 	has_notify INT DEFAULT 0,
+	number_of_booked_seats int NOT NULL default '1',
 	PRIMARY KEY (id_appointment)
 );
 CREATE INDEX idx_appointment_id_slot ON appointment_appointment (id_slot);
